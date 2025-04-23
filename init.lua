@@ -1,1 +1,7 @@
 require("joshu")
+vim.keymap.set("n", "<F5>", function()
+  vim.cmd("!.\\code\\build.bat")
+end, { desc = "Build project" })
+vim.keymap.set("n", "<F6>", function()
+  vim.cmd("!.\\build\\win32_handmade.exe")
+end, {desc = "run proj"})
